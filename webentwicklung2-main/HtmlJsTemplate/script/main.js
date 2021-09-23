@@ -32,12 +32,10 @@
 //}
 let numberOfPlayer = prompt("Anzahl?");
 numberOfPlayer = Number(numberOfPlayer);
-let player = [numberOfPlayer];
+
 console.log(numberOfPlayer);
-let handcard = {
-    Color: "Blue",
-    Value: 1,
-}
+let handcard = [1,2,3,4]
+const players = [];
 const points = 0;
 class Player{
     constructor(name, handcard, points){
@@ -45,15 +43,16 @@ class Player{
         this.name = name;
         this.handcard = handcard;
         this.points = points;
-    }
-    numberPlayer(numberOfPlayer){
-        for(let number = 0; number < numberOfPlayer; number ++){
-            name = prompt("Namen eingeben:");
-            player[number] = new Player();
-            console.log(Player.name, Player.handcard, Player.points);
-            
-        }
-    }
+    } 
     
 }
-let numberPlayer = Player.numberPlayer(numberOfPlayer);
+for(let number = 0; number < numberOfPlayer; number ++){
+    name = prompt(`Namen eingeben: ${number}`);
+    let p = new Player(name,handcard,0);
+    players.push(p);
+    
+}
+let numberPlayer = Player.numberPlayer;
+for(let i = 0; i <players.length; i++){
+    console.log(players[i]);
+}
