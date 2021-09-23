@@ -9,11 +9,11 @@ console.log(abfrage);
 if (abfrage == "+"){
     console.log(add(a,b));
 }else if(abfrage == "-"){
-    console.log(sub());
+    console.log(sub(a,b));
 }else if (abfrage == "/"){
-    console.log(diq());
+    console.log(diq(a,b));
 }else if(abfrage == "*"){
-    console.log(mul());
+    console.log(mul(a,b));
 }
 function add(a,b){
     return a+b;
