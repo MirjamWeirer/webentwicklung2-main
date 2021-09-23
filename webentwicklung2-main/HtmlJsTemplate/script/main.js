@@ -42,6 +42,7 @@ class Player{
             name = prompt("Namen eingeben:");
             this.name = name;
             this.handcard = [3,4,5];
+            console.log(Player[number]);
         }
     }
 }
